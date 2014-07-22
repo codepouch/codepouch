@@ -1,0 +1,12 @@
+# python
+*.py[co]
+
+# java
+*.class
+
+# c/c++
+*.o
+
+# editor
+*.bak
+*~
