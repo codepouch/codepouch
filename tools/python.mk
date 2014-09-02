@@ -1,5 +1,5 @@
-compile:
+compile: prepare
 
 clean:
-	@find . -iname \*.pyc -exec rm -f {} \;
+	find . -iname \*.pyc -exec rm -f {} \;
 

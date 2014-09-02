@@ -1,7 +1,8 @@
-compile: main
+compile: prepare main
 
 main: *.cpp
-	@g++ -o main -Wall *.cpp
+	g++ -o main -Wall *.cpp
 
 clean:
-	@find . -iname \*.o -exec rm -f {} \;
+	rm -f main
+	find . -iname \*.o -exec rm -f {} \;

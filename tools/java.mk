@@ -1,10 +1,10 @@
 EXECUTE="java Main"
 
-compile: Main.class
+compile: prepare Main.class
 
 %.class: %.java
-	@javac $<
+	javac $<
 
 .PHONY: clean
 clean:
-	@find . -iname \*.class -exec rm -f {} \;
+	find . -iname \*.class -exec rm -f {} \;
